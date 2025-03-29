@@ -2,7 +2,17 @@
 #include <math.h>
 
 
-// This is where you add the function calculate_hypotenuse
+// Calculations, done in steps to keep things easy to trouble shoot
+
+float calculate_hypotenuse(float a, float b) {
+    float pow_a = pow (a, 2.0);
+    float pow_b = pow (b, 2.0);
+
+    float sum_raised = pow_a + pow_b;
+    
+    float hypotenuse = sqrt(sum_raised);
+    return hypotenuse;
+}
 
 int main() {
     float a = 3.0;
